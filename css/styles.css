@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box; 
+    position: relative; 
+    font-size: 10px; 
+    overflow: hidden; 
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+    scroll-behavior: smooth; 
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+@font-face {
+  font-family: 'Naturey';
+  src: url('../fonts/Virginia Sky.ttf') format("TrueType");
+}
+
+:root{
+    --tan: #e8d3a3;
+    --yellow: #ffa633;
+    --deepblue: #3b5a9d;
+    --lightblue: #4fb2aa; 
+    --magenta: #80043F; 
+
+}
+
+.nav-bar{
+    position: fixed;
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    background-color: black;  
+    opacity: 0.9; 
+    height:300px; 
+    padding: 50px; 
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px; 
+    z-index: -1; 
+    
+}
+
+
+.main-nav-item {
+    display: inline-block;
+    margin-left: 50px; 
+    background-color: var(--yellow); 
+    height: 100%; 
+    width: 9vw; 
+    float: right; 
+    border: none; 
+    border-radius: 10px; 
+    
+}
+
+
+.overlay {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    
+}
+
+#main-overlay {
+    background-color: rgba(0,0,0,0.3); 
+    z-index: -2;
+}
+
+
+
+.page {
+    width: 100%; 
+}
+
+#title-page {
+    height: 100vh;
+    z-index: -3; 
+    background-image: url(../media/deep-blue-night-4k-8b.jpg); 
+    background-repeat: no-repeat; 
+    background-size:cover; 
+}
+
+.wrapper {
+    position: relative; 
+}
+
+
+
+
+
+#main-wrapper {
+    left: 50%;
+    top: 50%;
+    height: 30%; 
+    width: 30%; 
+    background-color: rgba(0,0,0,0.3); 
+    transform: translate(-50%, -50%); 
+    display: grid; 
+    padding: 300px; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-gap: 70px; 
+    box-sizing: content-box; 
+    border-radius: 300px; 
+}
+
+.item:hover{
+    background-color: red; 
+}
+
+
+
+#main-item-1{
+    margin-left: 30%;
+    margin-right: 30%; 
+    border-radius: 50px; 
+    background-color: var(--yellow); 
+    
+}
+
+
+
+
+#main-item-1 h3 {
+    font-size: 120px; 
+    color: black; 
+    text-align: center;
+    top: 50%; 
+    transform: translateY(-50%);
+    font-family: 'Poppins', sans-serif;
+}
